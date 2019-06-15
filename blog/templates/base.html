@@ -1,0 +1,14 @@
+<head>
+    {% block title %}<title></title>{% endblock %}
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+</head>
+<style>
+    body {
+        margin: 20px
+    }
+</style>
+<body>
+    <h1><a href="{% url 'blog_list' %}">博客首页</a></h1>
+    {% block content %}
+    {% endblock %}
+</body>
